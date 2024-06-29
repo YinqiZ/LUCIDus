@@ -10,12 +10,10 @@ check_na(Z)
 \item{Z}{A data matrix representing one layer of omics data}
 }
 \value{
-\enumerate{
-\item index:indeces for missing values in the omics data
-\item indicator_na: missing pattern for each observation
-\item impute_flag: - flag to initialize imputation. Only happens when sporadic missing
+1. index:indeces for missing values in the omics data
+2. indicator_na: missing pattern for each observation
+3. impute_flag: - flag to initialize imputation. Only happens when sporadic missing
 pattern is observed
-}
 }
 \description{
 Check missing patterns in one layer of omics data Z

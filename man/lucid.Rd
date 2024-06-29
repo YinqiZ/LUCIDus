@@ -45,7 +45,7 @@ for binary outcome, use "binary". Default is "normal".}
 
 \item{K}{Number of latent clusters to be tuned. For lucid_model = "early", number of latent clusters (should be greater or equal than 2).
 Either an integer or a vector of integer. If K is a vector, model selection
-on K is performed. For lucid_model = "parallel",a list with vectors of integers or just integers, same length as Z,
+on K is performed. For lucid_model = "parallel",a list with vectors of integers or just integers, same length as Z, 
 if the element itself is a vector, model selection on K is performed;
 For lucid_model = "serial", a list, each element is either an integer or an list of integers, same length as Z,
 if the smallest element (integer) itself is a vector, model selection on K is performed}
@@ -73,26 +73,24 @@ model selection and variable selection. User can try penalties from 0 to 1. Work
 }
 \value{
 An optimal LUCID model
-\enumerate{
-\item res_Beta: estimation for G->X associations
-\item res_Mu: estimation for the mu of the X->Z associations
-\item res_Sigma: estimation for the sigma of the X->Z associations
-\item res_Gamma: estimation for X->Y associations
-\item inclusion.p: inclusion probability of cluster assignment for each observation
-\item K: umber of latent clusters for "early"/list of numbers of latent clusters for "parallel" and "serial"
-\item var.names: names for the G, Z, Y variables
-\item init_omic.data.model: pre-specified geometric model of multi-omics data
-\item likelihood: converged LUCID model log likelihood
-\item family: the distribution of the outcome
-\item select: for LUCID early integration only, indicators of whether each exposure and omics feature is selected
-\item useY: whether this LUCID model is supervised
-\item Z: multi-omics data
-\item init_impute: pre-specified imputation method
-\item init_par: pre-specified parameter initialization method
-\item Rho: for LUCID early integration only, pre-specified regularity tuning parameter
-\item N: number of observations
-\item submodel: for LUCID in serial only, storing all the submodels
-}
+1. res_Beta: estimation for G->X associations
+2. res_Mu: estimation for the mu of the X->Z associations
+3. res_Sigma: estimation for the sigma of the X->Z associations
+4. res_Gamma: estimation for X->Y associations
+5. inclusion.p: inclusion probability of cluster assignment for each observation
+6. K: umber of latent clusters for "early"/list of numbers of latent clusters for "parallel" and "serial"
+7. var.names: names for the G, Z, Y variables
+8. init_omic.data.model: pre-specified geometric model of multi-omics data
+9. likelihood: converged LUCID model log likelihood
+10. family: the distribution of the outcome
+11. select: for LUCID early integration only, indicators of whether each exposure and omics feature is selected 
+12. useY: whether this LUCID model is supervised
+13. Z: multi-omics data
+14. init_impute: pre-specified imputation method
+15. init_par: pre-specified parameter initialization method
+16. Rho: for LUCID early integration only, pre-specified regularity tuning parameter 
+17. N: number of observations
+18. submodel: for LUCID in serial only, storing all the submodels
 }
 \description{
 Fit a lucid model for integrated analysis on exposure, outcome and multi-omics data, allowing for tuning

@@ -8,19 +8,19 @@
 A list with 4 matrices corresponding to exposures (G), omics data (Z),
 outcome (Y) and covariates (CoY), a total of 420 observations
 \describe{
-\item{exposure}{1 exposures measuring the maternal exposure to utero mercury.}
-\item{omics}{10 methylomics, 10 transcriptomics, 10 miRNA}
-\item{outcome}{A continuous outcome as an indicator of metabolic-dysfunciton-associated fatty liver
-disease (MAFLD)}
-\item{covariate}{3 covariates including fish_preg_ter, child sex, maternal
-age}
+    \item{exposure}{1 exposures measuring the maternal exposure to utero mercury.}
+    \item{omics}{10 methylomics, 10 transcriptomics, 10 miRNA}
+    \item{outcome}{A continuous outcome as an indicator of metabolic-dysfunciton-associated fatty liver
+    disease (MAFLD)}
+    \item{covariate}{3 covariates including fish_preg_ter, child sex, maternal
+    age}
 }
 }
 \usage{
 simulated_HELIX_data
 }
 \description{
-The Human Early-Life Exposome (HELIX) project is multi-center
+The Human Early-Life Exposome (HELIX) project is multi-center 
 research project that aims to characterize early-life environmental exposures
 and associate these with omics biomarkers and child health outcomes (Vrijheid, 2014. doi: 10.1289/ehp.1307204).
 We used a subset of HELIX data from Exposome Data Challenge 2021 (hold by

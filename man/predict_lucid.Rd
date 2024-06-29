@@ -48,11 +48,9 @@ is printed in console. Default is FALSE.}
 }
 \value{
 A list containing the following components:
-\enumerate{
-\item inclusion.p: A list of inclusion probabilities for each sub-model in the LUCID model.
-\item pred.x: A list of predicted values for the data matrix G.
-\item pred.y: Predicted values for the response variable Y (if response is TRUE).
-}
+1. inclusion.p: A list of inclusion probabilities for each sub-model in the LUCID model.
+2. pred.x: A list of predicted values for the data matrix G.
+3. pred.y: Predicted values for the response variable Y (if response is TRUE).
 }
 \description{
 Predict cluster assignment and outcome based on LUCID model
